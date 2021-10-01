@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Navbar from "../navbar";
 import styles from "./dashboard.module.css";
@@ -12,7 +12,7 @@ import { dateValidator } from "../../Helpers/dateValidator";
 import { descriptionValidator } from "../../Helpers/descriptionValidator";
 import { useDispatch, useSelector } from "react-redux";
 import { eventActions } from "../../store/event-slice";
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   heading: {

@@ -6,7 +6,6 @@ import Details from './screens/details';
 import PrivateRoute from './PrivateRoute'
 
 const AppNavigate = () => {
-  const isAuth = useSelector((state) => state.auth.isLoggedIn);
   return (
     <Switch>
       <Route exact path='/' component={Signin} />
